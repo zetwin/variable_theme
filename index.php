@@ -18,7 +18,7 @@
 	<li>Избранный софт</li>
 	</ul>
 
-		<section class="widget" style="margin-right:4%;">
+		<section class="widget">
     <div class="widget-heading">
       <h3 class="widget-title">Последние записи</h3>
           </div>
@@ -43,7 +43,7 @@
       <h3 class="widget-title">Топ просмотров</h3>
           </div>
          <ul class="downloads">
-	<?php $list= get_posts('meta_key=post_views_count&orderby=meta_value_num&order=DESC&posts_per_page=10'); 
+	<?php $list = get_posts('meta_key=post_views_count&orderby=meta_value_num&order=DESC&posts_per_page=10'); 
 	foreach( $list as $post ) : ?>
 		<li class="download" >
 		<span class="count"><?php echo getPostViews(get_the_ID()); ?></span>
@@ -54,5 +54,4 @@
   </section>
 		<div class="allrec"><a href="http://variable.pp.ua/category/archive/">Все записи</a></div>
 		<span class="aligncenter">Личный блог с заметками и опытом в использовании разных технологий, проверка безопасности компьютерных сетей.</span>
-		
 <?php get_footer(); ?>

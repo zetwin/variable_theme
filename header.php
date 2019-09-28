@@ -3,25 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title><?php wp_title('&laquo;', true, 'right'); bloginfo( 'name' ); ?></title>
-    <meta name="description" content="<?php wp_title('&laquo;', true, 'right'); bloginfo( 'name' ); ?>">
+	<meta name="description" content="<?php wp_title('&laquo;', true, 'right'); bloginfo( 'name' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="zetwin">
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link rel="stylesheet" href="//variable.pp.ua/wp-content/themes/variable_new/codecolorer.css" type="text/css" media="screen" />
 	<?php wp_head(); ?>
-	<link href="//variable.pp.ua/telegramassistant/telegram-site-helper.css" rel="stylesheet">
-	<script type="text/javascript" src="//variable.pp.ua/telegramassistant/telegram-site-helper.js"></script>
-	  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-3470633537191816",
-          enable_page_level_ads: true
-     });
-</script>
-  </head>
-  <body>
+	<!-- <link href="//variable.pp.ua/telegramassistant/telegram-site-helper.css" rel="stylesheet"> -->
+	<!-- <script type="text/javascript" src="//variable.pp.ua/telegramassistant/telegram-site-helper.js"></script> -->
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+			google_ad_client: "ca-pub-3470633537191816",
+			enable_page_level_ads: true
+		});
+	</script>
+</head>
 
+<body>
 
-  <span class="huge_title">
+<a href="/">Variable</a>
+
+	<?php if(0){ ?>
+<h1 class="huge_title">
 
   <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
  	  <?php  if ( !is_home() ) { /* If this is a category archive */ if (is_single()) { ?>
@@ -44,7 +47,9 @@
 		Blog Archives
  	  <?php }} ?>
 
-  </span>
+</h1>
+
+	   <?php } ?>
 
 
 <div id="box">
@@ -70,7 +75,6 @@
 <!--/LiveInternet-->
 
 <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter19247401 = new Ya.Metrika({ id:19247401, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/19247401" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-
 <!-- Google.Analytic --><script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-30476524-1']);_gaq.push(['_trackPageview']);(function(){var ga=document.createElement('script');ga.type='text/javascript';ga.async=true;ga.src=('https:'==document.location.protocol?'https://ssl':'http://www')+'.google-analytics.com/ga.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(ga,s)})();</script>
 
 <!--########### banners ################# -->
@@ -87,5 +91,5 @@
 
 
 		</div>
-		</aside>
-	<div class="content">
+	</aside>
+<div class="content">

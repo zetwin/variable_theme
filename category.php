@@ -2,7 +2,9 @@
 <?php if (have_posts()) : ?>
 <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 	
-<h1 class="archive-title"><?php printf( __( '%s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1>
+<h1 class="archive-title">
+	<?php printf( __( '%s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?>
+</h1>
 	  
 
 <?php
